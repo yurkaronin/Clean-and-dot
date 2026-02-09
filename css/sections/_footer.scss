@@ -1,3 +1,39 @@
 .footer {
-    
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      gap: 16px;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__contacts {
+    display: grid;
+    max-width: max-content;
+    justify-self: flex-end;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    @media (max-width: 767px) {
+      justify-self: center;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+  }
 }
