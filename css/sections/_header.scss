@@ -1,0 +1,87 @@
+.header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &__body {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    border: 2px solid #ffd943;
+    border-top: 0;
+    border-radius: 0 0 40px 40px;
+    background: #040404;
+    color: var(--white);
+    @media(max-width: 767px) {
+      padding: 14px 10px;
+      border-radius: 0 0 32px 32px;
+    }
+  }
+
+  &__top {
+    margin-bottom: 4px;
+  }
+
+  &__top-grid {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: 1fr auto auto auto auto;
+    @media(max-width: 1379px) {
+      grid-template-columns: 1fr auto auto;
+      gap: 16px;
+    }
+  }
+
+  &__city {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: underline;
+    font-family: var(--second-family);
+    font-weight: 400;
+
+    &::before {
+      content: url("../img/icon-location-mark.svg");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 16px;
+      display: inline-block;
+      margin-right: 8px;
+    }
+
+  }
+
+  &__bottom-grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    @media(max-width: 1379px) {
+      grid-template-columns: 1fr auto auto;
+      gap: 16px;
+    }
+    @media(max-width: 767px) {
+      grid-template-columns: 1fr auto;
+    }
+  }
+
+  &__bottom-col.-nav {
+    justify-self: flex-end;
+  }
+  &__bottom-col.-logo {
+    @media(max-width: 767px) {
+      justify-self: center;
+    }
+
+  }
+
+  &__logo {
+    max-width: 280px;
+    display: flex;
+    text-decoration: none;
+    @media(max-width: 767px) {
+      max-width: 180px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// Базовые стили
+@use "base/fonts";
+@use "base/root";
+@use "base/global";
+@use "base/support";
+
+// Компоненты
+@use "components/wrapper";
+@use "components/title";
+@use "components/subtitle";
+@use "components/button";
+@use "components/button-close";
+@use "components/button-menu";
+@use "components/phone";
+@use "components/social";
+@use "components/link";
+@use "components/time";
+@use "components/main-navigation";
+
+// секции
+@use "sections/section";
+@use "sections/header";
+@use "sections/mobile-navigation";
+@use "sections/hero";
+@use "sections/footer";

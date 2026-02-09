@@ -1,0 +1,17 @@
+.link {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #ffd943;
+  transition: var(--transition);
+
+  &:hover {
+    color: #ffe47a;
+  }
+}

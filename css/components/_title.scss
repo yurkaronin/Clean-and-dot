@@ -1,0 +1,18 @@
+.title {
+    margin-top: 0;
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    
+
+    span {
+        color: #ffd943;
+    }
+
+    &.-big {
+        font-size: 44px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

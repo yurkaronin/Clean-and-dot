@@ -1,0 +1,15 @@
+.time {
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--second-family);
+  font-weight: 400;
+
+  &::before {
+    content: url("../img/icon-clock.svg");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+  }
+}

@@ -6,50 +6,282 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Чисто и точка: детейлинг в Воронеже: химчистка, предпродажная подготовка, полировка, керамика/жидкое стекло.
   </title>
+
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Preload Golos -->
+  <link rel="preload" href="./fonts/Golos/GolosText-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Golos/GolosText-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Golos/GolosText-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Golos/GolosText-DemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Golos/GolosText-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Preload Geologica -->
+  <link rel="preload" href="./fonts/Geologica/Geologica-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Geologica/Geologica-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Geologica/Geologica-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Geologica/Geologica-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Geologica/Geologica-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Geologica/Geologica-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./libs/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__body">
+
+        <div class="header__top mobile-hide">
+          <div class="header__top-grid">
+            <div class="header__top-col -city">
+              <span class="header__city">Воронеж</span>
+            </div>
+            <div class="header__top-col -time laptop-hide tablet-hide mobile-hide">
+              <span class="time">Ежедневно: 10:00–20:00</span>
+            </div>
+            <div class="header__top-col -phone laptop-hide tablet-hide mobile-hide">
+              <!-- Телефон  -->
+              <a href="#" class="phone">8 918 089 60 09</a>
+            </div>
+            <div class="header__top-col -social">
+              <!-- соц сети  -->
+              <div class="social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="#" class="social__link" target="_blank">
+                      <img src="./img/icon-social-whatsapp.svg" alt="#">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link" target="_blank">
+                      <img src="./img/icon-social-telegram.svg" alt="#">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link" target="_blank">
+                      <img src="./img/icon-social-max.svg" alt="#">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__top-col -button">
+              <a href="#" class="link">Записаться</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom-grid">
+            <div class="header__bottom-col -logo">
+
+              <a class="header__logo" href="#">
+                <img src="./img/header-logo.png" alt="#">
+              </a>
+
+            </div>
+            <div class="header__bottom-col -nav laptop-hide tablet-hide mobile-hide">
+              <!-- десктопная навигация  -->
+              <div class="decktop-navigation">
+                <nav class="main-navigation">
+                  <ul class="main-navigation__list">
+                    <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#">Услуги</a>
+                    </li>
+                    <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#">Пакеты</a>
+                    </li>
+                    <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#">Квиз</a>
+                    </li>
+                    <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#">До/После</a>
+                    </li>
+                    <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#">Цены</a>
+                    </li>
+                    <li class="main-navigation__item">
+                      <a class="main-navigation__link" href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+
+
+            </div>
+            <div class="header__bottom-col -button mobile-hide">
+              <a href="#" class="link">Рассчитать</a>
+            </div>
+            <div class="header__bottom-col -button-menu desktop-hide">
+            <button class="button-menu">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 11H9M1 6H15M7 1H15" stroke="#161A1D" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- мобильная навигация  -->
+  <div class="mobile-navigation desktop-hide">
+    <div class="mobile-navigation__body">
+      <div class="mobile-navigation__grid">
+
+        <div class="mobile-navigation__row">
+          <nav class="main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Услуги</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Пакеты</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Квиз</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">До/После</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Цены</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-navigation__row">
+          <!-- Телефон  -->
+          <a href="#" class="phone">8 918 089 60 09</a>
+        </div>
+        <div class="mobile-navigation__row">
+          <span class="time">Ежедневно: 10:00–20:00</span>
+        </div>
+        <div class="mobile-navigation__row">
+          <!-- соц сети  -->
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" target="_blank">
+                  <img src="./img/icon-social-whatsapp.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" target="_blank">
+                  <img src="./img/icon-social-telegram.svg" alt="#">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" target="_blank">
+                  <img src="./img/icon-social-max.svg" alt="#">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+    <button class="button-close" type="button">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 19L10 10M10 10L1 1M10 10L19.0001 1M10 10L1 19.0001" stroke="#161A1D" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
   <main class="main">
+
     <!-- Первый экран  -->
     <section class="hero">
-      <h1>«Чисто и точка» — детейлинг в Воронеже: 
-        химчистка, предпродажная подготовка, полировка, 
-        керамика/жидкое стекло.</h1>
+      <div class="wrapper">
+
+        <p class="title -big">Детейлинг, который видно сразу. Уход, который держится долго</p>
+
+        <h1 class="subtitle">«Чисто и точка» — детейлинг в Воронеже: 
+          химчистка, предпродажная подготовка, полировка, 
+          керамика/жидкое стекло.</h1>
+        <a href="#" class="button">Кнопка</a>
+
+      </div>
     </section>
     <!-- Основные услуги  -->
-    <section class="basic-services">
-      <h2>Основные услуги</h2>
+    <section class="basic-services section">
+      <div class="wrapper">
+        <h2>Основные услуги</h2>
+      </div>
     </section>
     <!-- Пакеты услуг  -->
-    <section class="service-packages">
-      <h2>Пакеты услуг</h2>
+    <section class="service-packages section">
+      <div class="wrapper">
+        <h2>Пакеты услуг</h2>
+      </div>
     </section>
     <!-- Мини-квиз на 3 шага -->
-    <section class="mini-quize">
-      <h2>Мини-квиз на 3 шага</h2>
+    <section class="mini-quize section">
+      <div class="wrapper">
+        <h2>Мини-квиз на 3 шага</h2>
+      </div>
     </section>
     <!-- Наши работы «до/после»  -->
-    <section class="portfolio-preview">
-      <h2>Наши работы «до/после»</h2>
+    <section class="portfolio-preview section">
+      <div class="wrapper">
+        <h2>Наши работы «до/после»</h2>
+      </div>
     </section>
     <!-- Цены  -->
-    <section class="prices">
-      <h2>Цены</h2>
+    <section class="prices section">
+      <div class="wrapper">
+        <h2>Цены</h2>
+      </div>
     </section>
     <!-- Оставьте заявку -->
-    <section class="contact-form">
-      <h2>Оставьте заявку — перезвоним и рассчитаем стоимость</h2>
+    <section class="contact-form section">
+      <div class="wrapper">
+        <h2>Оставьте заявку — перезвоним и рассчитаем стоимость</h2>
+      </div>
     </section>
     <!-- Контакты и адреса -->
-    <section class="contact-us">
-      <h2>Контакты и адреса</h2>
+    <section class="contact-us section">
+      <div class="wrapper">
+        <h2>Контакты и адреса</h2>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 «Чисто и точка», Воронеж</p>
+    <div class="wrapper">
+      <p>© 2026 «Чисто и точка», Воронеж</p>
+      <!-- Телефон  -->
+      <a href="#" class="phone">8 918 089 60 09</a>
+
+    </div>
   </footer>
+
+  <script src="./libs/fslightbox.js"></script>
+  <script src="./libs/swiper-bundle.min.js"></script>
+
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
