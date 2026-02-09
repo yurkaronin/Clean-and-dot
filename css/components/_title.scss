@@ -1,18 +1,28 @@
 .title {
-    margin-top: 0;
-    color: var(--title-color);
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 1;
-    
+  margin-top: 0;
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
 
-    span {
-        color: #ffd943;
-    }
 
-    &.-big {
-        font-size: 44px;
-        text-transform: uppercase;
-        font-weight: 700;
+  span {
+    color: #ffd943;
+  }
+
+  &.-big {
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media(max-width: 1379px) {
+      font-size: 36px;
     }
+    @media(max-width: 1023px) {
+      font-size: 30px;
+    }
+    @media(max-width: 767px) {
+      font-size: 24px;
+    }
+  }
 }

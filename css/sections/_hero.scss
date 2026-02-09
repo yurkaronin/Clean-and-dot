@@ -1,5 +1,124 @@
 .hero {
-    .subtitle {
-        color: var(--title-color);
+  padding-top: 185px;
+  padding-bottom: 120px;
+  position: relative;
+  color: var(--white);
+
+  @media(max-width: 767px) {
+    padding-top: 125px;
+    padding-bottom: 32px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 8fr 4fr;
+    align-items: center;
+
+    @media(max-width: 1379px) {
+      display: block;
+      padding-right: 24%;
     }
+
+    @media(max-width: 1023px) {
+      display: block;
+      padding-right: 10%;
+    }
+    @media(max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top: -25px;
+    right: 120px;
+
+    @media(max-width: 1379px) {
+      top: 25px;
+      opacity: 0.5;
+    }
+
+    @media(max-width: 1023px) {
+      height: auto;
+      right: 0;
+      left: 0;
+      top: 0;
+      opacity: 0.3;
+
+    }
+
+    img {
+      @media(max-width: 1023px) {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__col.-text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -24px;
+    margin-bottom: -24px;
+    @media(max-width: 767px) {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0;
+    }
+
+    .button {
+      margin-right: 24px;
+      margin-bottom: 24px;
+      @media(max-width: 767px) {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: #8b8b8b;
+    @media(max-width: 1023px) {
+      color: inherit;
+      opacity: 0.7;
+    }
+    b {
+      color: #ffd943;
+    }
+  }
+
+  .subtitle {
+    color: var(--title-color);
+    margin-bottom: 32px;
+
+    @media(max-width: 767px) {
+      margin-bottom: 16px;
+      opacity: 0.7;
+    }
+  }
+
+  .title {
+    margin-bottom: 12px;
+    @media(max-width: 767px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .benefits-small {
+    color: inherit;
+  }
 }
