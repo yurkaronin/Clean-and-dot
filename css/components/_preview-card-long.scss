@@ -1,0 +1,150 @@
+.preview-card-long {
+  width: 100%;
+  max-width: 100%;
+
+  &__body {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 7fr 5fr;
+    width: 100%;
+    @media(max-width: 1379px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__details {
+    width: 100%;
+    background: #040404;
+    border-radius: 16px;
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-right: 120px;
+
+    @media (max-width: 767px) {
+      padding: 16px;
+    }
+
+  }
+
+
+  &__image {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    @media(max-width: 1379px) {
+      order: -1;
+      aspect-ratio: 13 / 6;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+
+  &__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  &__price {
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffd943;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 12px;
+    border-left: 2px solid currentColor;
+
+    @media (max-width: 767px) {
+      grid-column: initial;
+    }
+
+    b {
+      font-weight: 400;
+      font-size: 10px;
+      display: block;
+      margin-bottom: 4px;
+
+    }
+  }
+
+
+  &__footer {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    margin-top: 20px;
+    max-width: max-content;
+
+    @media(max-width: 767px) {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+
+
+    }
+
+    .button {
+      @media(max-width: 767px) {
+        width: 100%;
+        max-width: 100% !important;
+      }
+
+    }
+
+
+
+  }
+}
+
+.list-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 42px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+
+  @media(max-width: 1379px) {
+    gap: 32px;
+  }
+
+  @media(max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    color: inherit;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  li::before {
+    content: url(../img/icon-list-bulet.svg);
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+}

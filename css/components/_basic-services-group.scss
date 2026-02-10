@@ -1,11 +1,21 @@
 .basic-services-group {
+  &+& {
+    margin-top: 24px;
+
+    @media(max-width: 767px) {
+      margin-top: 16px;
+    }
+  }
+
   &__grid {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(3, 1fr);
+
     @media(max-width: 1023px) {
       grid-template-columns: repeat(2, 1fr);
     }
+
     @media(max-width: 767px) {
       grid-template-columns: repeat(1, 1fr);
       gap: 16px;

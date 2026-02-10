@@ -40,7 +40,8 @@
   }
 
   &.-small {
-    padding: 16px 28px;
+    padding: 16px 20px;
+    font-size: 14px;
 
     @media(max-width: 767px) {
       padding: 16px 20px;

@@ -99,61 +99,46 @@ svg * {
   transition-property: fill, stroke;
 }
 
-ul:not([class]) {
-  list-style: none;
-  padding-left: 0;
+// ul:not([class]) {
+//   list-style: none;
+//   padding-left: 0;
 
-  li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: calc(8px + 10px);
+//   li {
+//     margin-bottom: 10px;
+//     li::before {
+//       content: url(../img/icon-list-bulet.svg);
+//       width: 8px;
+//       height: 8px;
+//       display: inline-block;
+//       margin-right: 6px;
+//     }
+//   }
+// }
 
-    &::before {
-      content: "";
-      background-color: var(--white);
-      width: 8px;
-      height: 8px;
-      border: 2px solid var(--brand-color-1);
-      display: inline-block;
-      border-radius: 50%;
-      margin-right: 12px;
-      transition: var(--transition);
-      position: absolute;
-      top: 8px;
-      left: 0;
+// ol:not([class]) {
+//   list-style: none;
+//   padding-left: 0;
+//   counter-reset: my-counter;
 
-    }
+//   li {
+//     position: relative;
+//     margin-bottom: 10px;
 
-    &:hover::before {
-      border-color: var(--accent-color-1);
-    }
-  }
-}
+//     &::before {
+//       content: counter(my-counter) ".";
+//       counter-increment: my-counter;
+//       font-weight: 600;
+//       color: var(--brand-color-1);
+//       margin-right: 8px;
+//       display: inline-block;
+//       transition: var(--transition);
+//     }
 
-ol:not([class]) {
-  list-style: none;
-  padding-left: 0;
-  counter-reset: my-counter;
-
-  li {
-    position: relative;
-    margin-bottom: 10px;
-
-    &::before {
-      content: counter(my-counter) ".";
-      counter-increment: my-counter;
-      font-weight: 600;
-      color: var(--brand-color-1);
-      margin-right: 8px;
-      display: inline-block;
-      transition: var(--transition);
-    }
-
-    &:hover::before {
-      color: var(--accent-color-1);
-    }
-  }
-}
+//     &:hover::before {
+//       color: var(--accent-color-1);
+//     }
+//   }
+// }
 
 b:not([class]) {
   font-weight: 500;
