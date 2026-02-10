@@ -35,6 +35,7 @@
     width: auto;
     top: -25px;
     right: 120px;
+    pointer-events: none;
 
     @media(max-width: 1379px) {
       top: 25px;

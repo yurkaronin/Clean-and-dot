@@ -31,11 +31,21 @@
     background-color: transparent;
     color: #ffd943;
     border: 1px solid #ffd943;
+
     &:hover {
-    background: #ffe47a;
-    color: #040404;
-    border: 1px solid #ffe47a;
+      background: #ffe47a;
+      color: #040404;
+      border: 1px solid #ffe47a;
+    }
   }
+
+  &.-small {
+    padding: 16px 28px;
+
+    @media(max-width: 767px) {
+      padding: 16px 20px;
+      font-size: 14px;
+    }
   }
 
 }

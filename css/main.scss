@@ -19,10 +19,13 @@
 @use "components/benefits-small";
 @use "components/decorate";
 @use "components/copyright";
+@use "components/basic-services-group";
+@use "components/services-preview-card";
 
 // секции
 @use "sections/section";
 @use "sections/header";
 @use "sections/mobile-navigation";
 @use "sections/hero";
+@use "sections/basic-services";
 @use "sections/footer";
