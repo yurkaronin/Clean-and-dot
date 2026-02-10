@@ -22,9 +22,22 @@
     padding: 16px 20px;
     font-size: 14px;
   }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    path {
+      transition: var(--transition);
+    }
+  }
 
   &:hover {
     background: #ffe47a;
+  }
+  &:hover &__icon {
+    path {
+      fill: currentColor;
+    }
   }
 
   &.-transparent {

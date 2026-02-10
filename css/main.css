@@ -463,8 +463,19 @@ input[type=radio].visually-hidden {
     font-size: 14px;
   }
 }
+.button__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.button__icon path {
+  transition: var(--transition);
+}
 .button:hover {
   background: #ffe47a;
+}
+.button:hover .button__icon path {
+  fill: currentColor;
 }
 .button.-transparent {
   background-color: transparent;
@@ -1372,7 +1383,7 @@ input[type=radio].visually-hidden {
   display: grid;
   gap: 32px;
   grid-template-columns: 4fr 5fr 3fr;
-  align-items: baseline;
+  align-items: flex-start;
 }
 @media (max-width: 1023px) {
   .basic-services__top-grid {
@@ -1419,6 +1430,84 @@ input[type=radio].visually-hidden {
 .basic-services__text {
   margin: 0;
   max-width: 430px;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .basic-services__text {
+    font-size: 16px;
+  }
+}
+
+.service-packages__top {
+  margin-bottom: 48px;
+}
+@media (max-width: 1023px) {
+  .service-packages__top {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .service-packages__top {
+    margin-bottom: 24px;
+  }
+}
+.service-packages__top-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 4fr 5fr 3fr;
+  align-items: flex-start;
+}
+@media (max-width: 1023px) {
+  .service-packages__top-grid {
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .service-packages__top-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+@media (max-width: 1023px) {
+  .service-packages__top-col.-text {
+    grid-row: span 2;
+    order: 3;
+  }
+}
+@media (max-width: 767px) {
+  .service-packages__top-col.-text {
+    grid-row: initial;
+    order: initial;
+  }
+}
+.service-packages .title {
+  max-width: 260px;
+}
+@media (max-width: 1023px) {
+  .service-packages .title {
+    max-width: 100%;
+  }
+}
+.service-packages .button {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .service-packages .button {
+    margin-left: 0;
+  }
+}
+.service-packages__text {
+  margin: 0;
+  max-width: 430px;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .service-packages__text {
+    font-size: 16px;
+  }
 }
 
 .footer {
