@@ -215,8 +215,6 @@ table:not([class]) {
   border-collapse: collapse;
   border-spacing: 0;
   min-width: 100%;
-  /* Эффект при наведении на строку */
-  /* Для сохранения эффекта при наведении на четные строки */
 }
 table:not([class]) caption {
   caption-side: bottom;
@@ -224,12 +222,18 @@ table:not([class]) caption {
 table:not([class]) tr:nth-child(even) {
   background-color: rgba(176, 163, 147, 0.2);
 }
+table:not([class]) {
+  /* Эффект при наведении на строку */
+}
 table:not([class]) tr {
   transition: background-color 0.3s ease;
 }
 table:not([class]) tr:hover {
   background-color: rgba(176, 163, 147, 0.4);
   cursor: pointer;
+}
+table:not([class]) {
+  /* Для сохранения эффекта при наведении на четные строки */
 }
 table:not([class]) tr:nth-child(even):hover {
   background-color: rgba(176, 163, 147, 0.5);
